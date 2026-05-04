@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bracetty | Music Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo" onclick="openHomePage()">BRACETTY</div>
+  <nav>
+    <a href="#" onclick="goToSection('preview-section'); return false;">Preview</a>
+    <a href="#" onclick="goToSection('vote-section'); return false;">Vote</a>
+    <a href="#" onclick="goToSection('links-section'); return false;">Links</a>
+    <a href="#" onclick="goToSection('albums-section'); return false;">Albums</a>
+    <a href="#" onclick="openBioPage(); return false;">Bio</a>
+  </nav>
+</header>
+
+<div id="main-content">
+  <div id="preview-section"></div>
+  <div id="vote-section"></div>
+  <div id="links-section"></div>
+  <div id="albums-section"></div>
+</div>
+
+<div id="bio-page" class="hidden"></div>
+
+<div id="footer-section"></div>
+<div id="player-section"></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

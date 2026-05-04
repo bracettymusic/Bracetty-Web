@@ -1,0 +1,86 @@
+<section id="albums">
+  <h2 class="section-title" onclick="toggleAlbumsSection()">
+    Discografía <span id="arrowAlbumsSection">▼</span>
+  </h2>
+
+  <p class="section-subtitle">Álbumes, sencillos y próximos lanzamientos.</p>
+
+  <div id="albumsContent" class="discography">
+
+    <h3 class="discography-title clickable" onclick="toggleInnerSection('albumListSection', 'arrowAlbumList')">
+      Álbumes <span id="arrowAlbumList">▼</span>
+    </h3>
+
+    <div id="albumListSection">
+      <div class="album ambient-album">
+
+  <div class="album-banner">
+    <img src="images/ambient.jpeg" alt="AMBIENT">
+  </div>
+
+  <div class="album-info-vertical">
+    <h3 class="clickable" onclick="toggleInnerSection('ambientTracks', 'arrowAlbum')">
+  AMBIENT 🎧 <span id="arrowAlbum">▼</span>
+</h3>
+    <p>Álbum completo.</p>
+
+    <button class="album-play-btn" onclick="playAmbientAlbum()">⏵ PLAY AMBIENT</button>
+
+  <div id="ambientTracks" class="album-tracks closed">
+      <div class="track" onclick="playSong(this, 'audio/ambient1.wav')">⏵ 01. MAS RICA</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient2.wav')">⏵ 02. AMBIENT</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient3.wav')">⏵ 03. TE PASO A BUSCAR</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient4.wav')">⏵ 04. DALE SUAVE</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient5.wav')">⏵ 05. DENTRO DE TI</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient6.wav')">⏵ 06. MODOLUNA</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient7.wav')">⏵ 07. L&P</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient8.wav')">⏵ 08. TENTANDO</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient9.wav')">⏵ 09. NO ME HAGAS ESPERAR (BONUS TRACK)</div>
+      <div class="track" onclick="playSong(this, 'audio/ambient10.mp3')">⏵ 10. REYNISFJARA (BONUS REFE TRACK)</div>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+    <h3 class="discography-title clickable" onclick="toggleInnerSection('singlesSection', 'arrowSingles')">
+      Sencillos <span id="arrowSingles">▼</span>
+    </h3>
+
+    <div id="singlesSection" class="singles-grid">
+      <div class="single-card">
+        <div class="album-banner">
+  <img src="images/irme.PNG" alt="IRME">
+</div>
+
+        <h3>IRME</h3>
+        <p>Sencillo actual.</p>
+        <div class="track" onclick="playSong(this, 'audio/TRACK01.mp3')">⏵IRME</div>
+      </div>
+
+    <div class="single-card">
+        <div class="album-banner">
+  <img src="images/Chandelier.PNG" alt="CHaNdeLIER">
+</div>
+
+    <h3>CHaNdeLIER</h3>
+<p>Sencillo actual.</p>
+        <div class="track" onclick="playSong(this, 'audio/Chandelier.wav')">⏵ CHaNdeLIER</div>
+      </div>
+    </div>
+    <h3 class="discography-title clickable" onclick="toggleInnerSection('nextSingleSection', 'arrowNextSingle')">
+      Próximo sencillo <span id="arrowNextSingle">▼</span>
+    </h3>
+
+    <div id="nextSingleSection" class="singles-grid">
+      <div class="single-card">
+        <div class="single-banner coming-banner"></div>
+
+        <h3>Próximo sencillo 🔒</h3>
+        <p>Coming soon...</p>
+        <div class="track locked-track">🔒 Preview pronto</div>
+      </div>
+    </div>
+
+  </div>
+</section>
