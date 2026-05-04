@@ -5,15 +5,15 @@ let votesA = 0;
 let votesB = 0;
 
 const ambientPlaylist = [
-  "audio/ambient1.wav",
-  "audio/ambient2.wav",
-  "audio/ambient3.wav",
-  "audio/ambient4.wav",
-  "audio/ambient5.wav",
-  "audio/ambient6.wav",
-  "audio/ambient7.wav",
-  "audio/ambient8.wav",
-  "audio/ambient9.wav",
+  "audio/ambient01.mp3",
+  "audio/ambient02.mp3",
+  "audio/ambient03.mp3",
+  "audio/ambient04.mp3",
+  "audio/ambient05.mp3",
+  "audio/ambient06.mp3",
+  "audio/ambient07.mp3",
+  "audio/ambient08.mp3",
+  "audio/ambient09.mp3",
   "audio/ambient10.mp3"
 ];
 
@@ -25,7 +25,7 @@ Tú solo cambias los textos y tiempos luego.
 
 const lyricsData = {
 
-  "audio/ambient1.wav": [
+  "audio/ambient01.mp3": [
   { time: 9, text: "Me pregunto cómo estás" },
   { time: 11, text: "Hace pal’ no sé de ti" },
   { time: 14, text: "Veo nuestra conversación y no hablamos desde Abril" },
@@ -115,44 +115,44 @@ const lyricsData = {
   { time: 186, text: "Solo quisiera poder ir a buscar…" }
 ],
 
-  "audio/ambient2.wav": [
+  "audio/ambient02.mp3": [
     { time: 0, text: "AMBIENT" },
     { time: 6, text: "Primera línea" },
     { time: 12, text: "Segunda línea" }
   ],
 
-  "audio/ambient3.wav": [
+  "audio/ambient03.mp3": [
     { time: 0, text: "TE PASO A BUSCAR" },
     { time: 5, text: "Primera línea" },
     { time: 11, text: "Segunda línea" }
   ],
 
-  "audio/ambient4.wav": [
+  "audio/ambient04.mp3": [
     { time: 0, text: "DALE SUAVE" },
     { time: 6, text: "Primera línea" }
   ],
 
-  "audio/ambient5.wav": [
+  "audio/ambient05.mp3": [
     { time: 0, text: "DENTRO DE TI" },
     { time: 6, text: "Primera línea" }
   ],
 
-  "audio/ambient6.wav": [
+  "audio/ambient06.mp3": [
     { time: 0, text: "MODOLUNA" },
     { time: 6, text: "Primera línea" }
   ],
 
-  "audio/ambient7.wav": [
+  "audio/ambient07.mp3": [
     { time: 0, text: "L&P" },
     { time: 6, text: "Primera línea" }
   ],
 
-  "audio/ambient8.wav": [
+  "audio/ambient08.mp3": [
     { time: 0, text: "TENTANDO" },
     { time: 6, text: "Primera línea" }
   ],
 
-  "audio/ambient9.wav": [
+  "audio/ambient09.mp3": [
     { time: 0, text: "NO ME HAGAS ESPERAR" },
     { time: 6, text: "Primera línea" }
   ],
@@ -167,6 +167,12 @@ const lyricsData = {
     { time: 5, text: "Primera línea de IRME" },
     { time: 10, text: "Segunda línea de IRME" },
     { time: 15, text: "Tercera línea de IRME" }
+  ],
+  "audio/chandelier.mp3": [
+    { time: 0, text: "Chandelier" },
+    { time: 5, text: "Primera línea de IRME" },
+    { time: 10, text: "Segunda línea de IRME" },
+    { time: 15, text: "Tercera línea de IRME" }
   ]
 };
 
@@ -175,39 +181,39 @@ const songsTheme = {
     main: "#a855f7",
     second: "#6d28d9"
   },
-  "audio/ambient1.wav": {
+  "audio/ambient01.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient2.wav": {
+  "audio/ambient02.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient3.wav": {
+  "audio/ambient03.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient4.wav": {
+  "audio/ambient04.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient5.wav": {
+  "audio/ambient05.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient6.wav": {
+  "audio/ambient06.mp3": {
    main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient7.wav": {
+  "audio/ambient07.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient8.wav": {
+  "audio/ambient08.mp3": {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/ambient9.wav": {
+  "audio/ambient09.mp3": {
    main: "#2200ff",
     second: "#0000db"
   },
@@ -215,7 +221,7 @@ const songsTheme = {
     main: "#2200ff",
     second: "#0000db"
   },
-  "audio/Chandelier.wav": {
+  "audio/chandelier.mp3": {
     main:"#d4af37",
     second: "#ffffff"
 
