@@ -678,20 +678,28 @@ function updateReactiveEffects() {
 
 function startAudioVisualizer() {
   const audio = document.getElementById("audio");
-  if (!audio || visualizerStarted) return;
+  if (!audio) return;
 
-  audioContext = new (window.AudioContext || window.webkitAudioContext)();
-  analyser = audioContext.createAnalyser();
+  if (!audioContext) {
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  }
 
-  sourceNode = audioContext.createMediaElementSource(audio);
-  sourceNode.connect(analyser);
-  analyser.connect(audioContext.destination);
+  if (!analyser) {
+    analyser = audioContext.createAnalyser();
+    analyser.fftSize = 256;
+    dataArray = new Uint8Array(analyser.frequencyBinCount);
+  }
 
-  analyser.fftSize = 256;
-  dataArray = new Uint8Array(analyser.frequencyBinCount);
+  if (!sourceNode) {
+    sourceNode = audioContext.createMediaElementSource(audio);
+    sourceNode.connect(analyser);
+    analyser.connect(audioContext.destination);
+  }
 
-  visualizerStarted = true;
-  animateAudioEffects();
+  if (!visualizerStarted) {
+    visualizerStarted = true;
+    animateAudioEffects();
+  }
 }
 
 function animateAudioEffects(timestamp = 0) {

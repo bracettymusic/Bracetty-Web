@@ -1,3 +1,16 @@
+
+<div id="trendingPreview" class="trending-preview">
+  🔥 Esperando votos...
+</div>
+
+<button class="artist-exit-btn" onclick="exitArtistMode()">
+
+  Salir de Artist Mode
+
+</button>
+
+
+
 <section id="vote">
   <h2 class="section-title">Elige el próximo release</h2>
   <p class="section-subtitle">
@@ -18,7 +31,11 @@
       </div>
 
       <button class="vote-btn" onclick="vote('A')">Votar por A</button>
+
       <p class="vote-count" id="votesA">0 votos</p>
+      <div class="vote-bar">
+        <div class="vote-bar-fill" id="barA"></div>
+      </div>
 
       <div class="comments-box">
         <div class="comments-title">Comentarios</div>
@@ -45,7 +62,11 @@
       </div>
 
       <button class="vote-btn" onclick="vote('B')">Votar por B</button>
+
       <p class="vote-count" id="votesB">0 votos</p>
+      <div class="vote-bar">
+        <div class="vote-bar-fill" id="barB"></div>
+      </div>
 
       <div class="comments-box">
         <div class="comments-title">Comentarios</div>
